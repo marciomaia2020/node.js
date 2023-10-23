@@ -1,16 +1,15 @@
 # node.js
 Aprendendo node js - acesse os sites de referências - 1-https://www.w3schools.com/nodejs/nodejs_get_started.asp e depois o site  https://nodejs.org/en
 
-Node.js Get Started
-Download Node.js
-The official Node.js website has installation instructions for Node.js: https://nodejs.org
 
-Getting Started
-Once you have downloaded and installed Node.js on your computer, let's try to display "Hello World" in a web browser.
+O site oficial do Node.js tem instruções de instalação para Node.js: https://nodejs.org
 
-Create a Node.js file named "myfirst.js", and add the following code:
+Começando
+Depois de baixar e instalar o Node.js em seu computador, vamos tentar exibir “Hello World” em um navegador da web.
 
-myfirst.js
+Crie um arquivo Node.js chamado "myfirst.js" e adicione o seguinte código:
+
+meu primeiro.js
 
 var http = require('http');
 
@@ -18,30 +17,30 @@ http.createServer(function (req, res) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.end('Hello World!');
 }).listen(8080);
-Save the file on your computer: C:\Users\Your Name\myfirst.js
+Salve o arquivo em seu computador: C:\Users\ Seu Nome \myfirst.js
 
-The code tells the computer to write "Hello World!" if anyone (e.g. a web browser) tries to access your computer on port 8080.
+O código diz ao computador para escrever “Hello World!” se alguém (por exemplo, um navegador da web) tentar acessar seu computador na porta 8080.
 
-For now, you do not have to understand the code. It will be explained later.
+Por enquanto, você não precisa entender o código. Isso será explicado mais tarde.
 
-Command Line Interface
-Node.js files must be initiated in the "Command Line Interface" program of your computer.
+Interface da Linha de comando
+Os arquivos Node.js devem ser iniciados no programa "Command Line Interface" do seu computador.
 
-How to open the command line interface on your computer depends on the operating system. For Windows users, press the start button and look for "Command Prompt", or simply write "cmd" in the search field.
+Como abrir a interface de linha de comando em seu computador depende do sistema operacional. Para usuários do Windows, pressione o botão Iniciar e procure por “Prompt de Comando”, ou simplesmente escreva “cmd” no campo de pesquisa.
 
-Navigate to the folder that contains the file "myfirst.js", the command line interface window should look something like this:
+Navegue até a pasta que contém o arquivo "myfirst.js", a janela da interface da linha de comando deve ser semelhante a esta:
 
 C:\Users\Your Name>_
-Initiate the Node.js File
-The file you have just created must be initiated by Node.js before any action can take place.
+Inicie o arquivo Node.js
+O arquivo que você acabou de criar deve ser iniciado pelo Node.js antes que qualquer ação possa ocorrer.
 
-Start your command line interface, write node myfirst.js and hit enter:
+Inicie sua interface de linha de comando, escreva node myfirst.jse pressione Enter:
 
-Initiate "myfirst.js":
+Inicie "myfirst.js":
 
 C:\Users\Your Name>node myfirst.js
-Now, your computer works as a server!
+Agora seu computador funciona como um servidor!
 
-If anyone tries to access your computer on port 8080, they will get a "Hello World!" message in return!
+Se alguém tentar acessar seu computador na porta 8080, receberá uma mensagem "Olá, mundo!" mensagem em troca!
 
-Start your internet browser, and type in the address: http://localhost:8080
+Inicie seu navegador de internet e digite o endereço: http://localhost:8080
